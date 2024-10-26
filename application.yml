@@ -1,0 +1,23 @@
+# Set up our Proxy
+proxy:
+#  docker:
+#    image-pull-policy: Always
+  specs:
+  - id: dash_board
+    container-image: analytics_demonstration
+#  docker-registry-username: docker_user
+#  docker-registry-password: docker_tokens
+#  docker-registry-domain: docker.io
+  title: Open Analytics Shiny Proxy # Title of the Proxy
+  logo-url: https://www.openanalytics.eu/shinyproxy/logo.png # A Logo from R Shiny
+  # Landing page path
+  landing-page: /
+  # Test for life and time-out otherwise when connecting.
+  heartbeat-rate: 10000 
+  heartbeat-timeout: 60000
+  # Exposed Port usage
+  port: 8080 
+  # Log files
+  logging: 
+  file:
+    name: shinyproxy.log
