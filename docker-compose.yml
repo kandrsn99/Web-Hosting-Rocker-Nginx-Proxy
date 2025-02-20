@@ -1,0 +1,28 @@
+# Denote all services utilized by docker engine.
+services:
+# A web application service.
+  shiny_proxy:
+    # Build Dockerfile
+    build: ./shiny_app
+    # Name of the container
+    container_name: running_shiny
+    restart: always
+    # Map the ports where R Shiny will run on your machines infrastructure.
+    ports: 
+      - 3838:3838
+  nginx_proxy:
+    # Typically, we may refer to an image to pull from here. This is a sample, so there is none.
+    # image: image_name
+    # Build Dockerfile
+    build: ./nginx_app
+    # Name of the container
+    container_name: running_proxy
+    restart: always
+    # Mapping ports 80 and 443 on your machines infrastructure.
+    # Typically, your port for transfer control protocol is 22/tcp is SSH, 80/tcp is HTTP, and 443/tcp is HTTPS.
+    ports:
+      - 80:80
+      - 443:443
+    # Dependencies
+    depends_on:
+      - shiny_proxy
