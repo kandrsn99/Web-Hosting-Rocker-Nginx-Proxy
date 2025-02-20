@@ -1,5 +1,5 @@
 # Pull latest image of NGINX
-FROM nginx
+FROM nginx:latest
 # Copy NGINX configuration
 COPY ./configuration/nginx/nginx.conf /etc/nginx/nginx.conf
 # Copy SSL configuration
