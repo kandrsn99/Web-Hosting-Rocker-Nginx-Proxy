@@ -1,4 +1,4 @@
-# Web-Hosting-Docker-Container-Nginx-Proxy
+# Web-Hosting-Rocker-Container-Nginx-Proxy
 This is a sample of a webpage launchable with [Rocker](https://rocker-project.org/images/versioned/shiny.html). [Rocker](https://rocker-project.org/images/versioned/shiny.html) makes it easy to deploy executables on a server host using [R language](https://cran.rstudio.org/) dependencies to create beautiful applications using the language.
 
 You may read about the summarized documentation of Docker here:
