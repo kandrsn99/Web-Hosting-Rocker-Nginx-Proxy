@@ -1,0 +1,35 @@
+---
+title: "What is Data?"
+output: html_document
+---
+
+# Introduction
+
+Let us begin by describing what Data is for our reader. Data is anything that is either structured or unstructured that may be utilized for collection, processing, and visualization.
+
+Typically, you begin with a question you might want to analyze. You then would shop for that data through various sources.
+
+## Structured Data
+
+Structured data makes life easy. Anything that is easily processable (readable) without parsing beforehand is considered structured data. Much of what we use in R will be comma separated value (CSV) files, which are easily loaded into a data frame for manipulation.
+
+## Unstructured Data
+
+Unstructured data makes life hard. It is not in any specific format and typically is not easily processed. You would then have to parse that data into a readable file before processing it for any sort of manipulation.
+
+## Data Life Cycle
+
+It is important to note how to best handle your data.
+
+1.  Raw data collection.
+2.  Parsing acquired data (sometimes referred to as "cleaning").
+3.  Loading data into storage (typically a data-frame in R).
+4.  Process (manipulate) the data loaded into storage.
+5.  Analyze the output from the processed data.
+6.  Store the analysis for recovery.
+
+# Conclusion
+
+Data is an important part of every day life. So much so, that many nation states rely on it for security and companies to maintain profitability in the turbulent world.
+
+Data is important for the ability to help us make better decisions, solve problems, and evaluate performance. Good luck in your data collection and thank you for reading!
