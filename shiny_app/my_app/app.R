@@ -1,7 +1,8 @@
+# Library calls
 library(knitr)
 library(shiny)
 library(bslib)
-library(ggplot2)
+library(ggplot2) # Probably redundant since it is called in the Rmd files.
 library(shinythemes)
 # User Interface
 ui <- page_navbar(
