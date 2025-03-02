@@ -34,21 +34,21 @@ server <- function(input, output) {
   output$analysis_markdown <- renderUI({
     includeHTML(
       rmarkdown::render(
-        input="./whatanalysis.Rmd"
+        input="whatanalysis.Rmd"
     ))
   })
   # Output science page
   output$science_markdown <- renderUI({
     includeHTML(
       rmarkdown::render(
-        input="./whatscience.Rmd"
+        input="whatscience.Rmd"
       ))
   })
   # Output data page
   output$data_markdown <- renderUI({
     includeHTML(
       rmarkdown::render(
-        input="./whatdata.Rmd"
+        input="whatdata.Rmd"
       ))
   })
 }
