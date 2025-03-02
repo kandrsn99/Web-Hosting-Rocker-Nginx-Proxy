@@ -25,6 +25,7 @@ Subsequently, change into the directory containing your downloaded repository.
 
 Upon entering the directory. The docker compose file should allow you to build the html web-page.
 > docker compose build
+
 > docker compose up -d
 
 You may check your application via web hosting service on http://localhost:80/ or the server address on http://address:80/
