@@ -21,7 +21,7 @@ Typically, data science is involved with the building of data sets or structurin
 As you may have seen from the previous page on 'what is analysis' we had to partly clean up our data. The file containing our [data-set](https://www.eia.gov/dnav/ng/hist/n9140us2M.htm) with consumption from January 2001 to August 2024 had a character vector instead of a date type. This column in the data frame had to be manipulated where it was readable by our graph we computed. Now, we will summarize the data with some basic statistical computation.
 
 ```{r data summary}
-my.data <- read.csv("./total_monthly_consumption.csv")
+my.data <- read.csv("total_monthly_consumption.csv")
 summary(my.data)
 ```
 
