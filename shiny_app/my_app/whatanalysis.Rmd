@@ -22,7 +22,7 @@ We may begin here by loading a comma separated file (.csv) to gain insight about
 The [data-set](https://www.eia.gov/dnav/ng/hist/n9140us2M.htm) we will utilize is for monthly consumption from January 2001 to August 2024 of Natural Gas.
 
 ```{r data}
-my.data <- read.csv("./total_monthly_consumption.csv")
+my.data <- read.csv("total_monthly_consumption.csv")
 head(my.data)
 ```
 
