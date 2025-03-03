@@ -127,7 +127,7 @@ server <- function(input, output) {
   maximum <- max(numList, na.rm = TRUE)
   mean_function <- mean(numList, na.rm = TRUE)
   # Summary frame
-  summary_frame <- data.frame("Consumption", Minimum = minumum, Median = median_function, Maximum = maximum, Mean = mean_function)
+  summary_frame <- data.frame(Value = "Consumption", Minimum = minumum, Median = median_function, Maximum = maximum, Mean = mean_function)
   # Create table
   output$myData <- renderTable({
     summary_frame
