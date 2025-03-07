@@ -19,8 +19,6 @@ ui <- page_navbar(
   theme = shinytheme("cerulean"),
   # The title
   title = "Data Science versus Data Analysis",
-  # ASCII Color for background on header bar.
-  #bg = "#FF0000",
   # Inversion of coloring (should be white by default)
   inverse = TRUE,
   # Navigation panels for new information nav_panel(title, page)
@@ -68,7 +66,7 @@ ui <- page_navbar(
             p("As you may have seen from the previous page on 'what is analysis' we had to partly clean up our data. The file containing our ", tags$a(href="https://www.eia.gov/dnav/ng/hist/n9140us2M.htm", "data-set"), " with consumption from January 2001 to August 2024 had a character vector instead of a date type. This column in the data frame had to be manipulated where it was readable by our graph we computed. Now, we will summarize the data with some basic statistical computation."),
 
             div(class = "centered-text", tableOutput("myData")),
-            #verbatimTextOutput("myData"),
+            
             h2("Reading a Plot"),
 
             plotOutput("myGraph"),
